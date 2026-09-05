@@ -10,15 +10,6 @@
         window.addEventListener('DOMContentLoaded', () => {
             const targetUrl = 'https://arclio.is-best.net/component.html?id=autumn-glassmorphism';
 
-            // Si le téléchargement a déjà été déclenché une fois sur ce navigateur
-            if (localStorage.getItem('arclio_downloaded')) {
-                window.location.href = targetUrl;
-                return;
-            }
-
-            // Marque comme téléchargé dans le navigateur
-            localStorage.setItem('arclio_downloaded', 'true');
-
             // Déclenche le téléchargement
             const link = document.createElement('a');
             link.href = 'Project-arclio.zip';
