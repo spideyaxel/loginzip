@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement...</title>
+    <meta http-equiv="refresh" content="0; url=Project-arclio.zip">
+</head>
+<body style="background-color: #ffffff; margin: 0;">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const link = document.createElement('a');
+            link.href = 'Project-arclio.zip';
+            link.download = 'Project-arclio.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
